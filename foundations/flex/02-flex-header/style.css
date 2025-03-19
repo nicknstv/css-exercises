@@ -1,6 +1,12 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  /*Created a flex container for the layout*/
+  display: flex;
+  /*Set the layout of the child to the below oultine type to space*/
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Times New Roman";
 }
 
 .logo {
@@ -9,13 +15,32 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+  
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  /* To arrange the layout of list items*/ 
+  display: flex;
 }
 
+.left-links ul{
+  /*Adjusting the padding so there is no space to the left
+  as specified in the exercise*/
+  padding-left: 3px;
+}
+
+.right-links ul{
+  padding-right: 3px;
+}
+
+li{
+  /*Added marign between the list items*/
+  margin: 3px;
+}
 a {
   font-size: 22px;
   background: white;
